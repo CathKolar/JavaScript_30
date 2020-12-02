@@ -21,7 +21,20 @@
   <img src="src/robin-cross-uUROWXBqEPE-unsplash (1).jpg">
 
   <style>
+:root {
+  --base: #501b44;
+  --pacing: 10px;
+  --blur: 10px;
+}
 
+img{
+  padding :var(--spacing);
+  background: var(--base);
+  filter:blur(var(--blur));
+}
+.hl{
+  color:var(--base);
+}
     /*
       misc styles, nothing to do with CSS variables
     */
