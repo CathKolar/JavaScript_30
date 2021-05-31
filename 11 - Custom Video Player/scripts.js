@@ -6,5 +6,12 @@ const toggle = player.querySelector(".progress__filled");
 const skipButtons = player.querySelectorAll("[data-skip]");
 const ranges = player.querySelectorAll(".player__slider");
 /* Build our functions */
-
+function togglePlay() {
+  if (video.paused) {
+    video.play();
+  } else {
+    video.pause();
+  }
+}
 /* Hook up the event listeners */
+video.addEventListener("click", togglePlay);
