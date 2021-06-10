@@ -50,7 +50,12 @@
       const team4 = [...players];
 
       // now when we update it, the original one isn't changed
+      team4[3] = "Georgie";
+      console.log(team4);
 
+      const team5 = Array.from(players);
+      team5[1] = "HALLIE";
+      console.log(players, team5);
       // The same thing goes for objects, let's say we have a person object
 
       // with Objects
